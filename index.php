@@ -39,8 +39,8 @@
           <ul class="list-group">
             <li class="list-group-item list-group-item-action d-flex justify-content-between"
               v-for="(task, index) in list" :key="index">
-              <span>{{task.text}}</span>
-              <i class="fa-solid fa-trash fs-5"></i>
+              <span :class="{'text-decoration-line-through' : task.done}">{{task.text}}</span>
+              <i @click="removeTask(index)" class="fa-solid fa-trash fs-5"></i>
             </li>
           </ul>
           <!-- <div class="text-center">

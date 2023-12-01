@@ -13,8 +13,10 @@ createApp({
       const data = new FormData();
       data.append("task", this.newTask);
       axios.post(this.apiurl, data).then((response) => {
+        console.log(response.data);
         this.list = response.data;
       });
+      this.newTask = "";
     },
   },
   created() {

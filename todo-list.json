@@ -1,24 +1,18 @@
 [
   {
-    "task": "asdasd",
+    "text": "Do the dishes",
     "done": false
   },
-  [
-    {
-      "text": "Do the dishes",
-      "done": false
-    },
-    {
-      "text": "Do laundry",
-      "done": true
-    },
-    {
-      "text": "Take the trash out",
-      "done": false
-    },
-    {
-      "text": "Vacuum the living room",
-      "done": true
-    }
-  ]
+  {
+    "text": "Do laundry",
+    "done": true
+  },
+  {
+    "text": "Take the trash out",
+    "done": false
+  },
+  {
+    "text": "Vacuum the living room",
+    "done": true
+  }
 ]

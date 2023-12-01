@@ -4,13 +4,14 @@ $arrayList = json_decode($list, true);
 
 if (!empty($_POST['task'])) {
   $newTask = [
-    [
-      'task' => $_POST['task'],
-      'done' => false,
-    ],
+
+    'text' => $_POST['task'],
+    'done' => false,
+
   ];
-  array_push($newTask, $arrayList);
-  $toJson = json_encode($newTask);
+
+  array_unshift($arrayList, $newTask);
+  $toJson = json_encode($arrayList);
   file_put_contents('todo-list.json', $toJson);
 }
 
